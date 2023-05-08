@@ -1,0 +1,15 @@
+/*All technical css*/
+
+.t_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 18px 34px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}

@@ -1,0 +1,93 @@
+/*Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;700;&display=swap');
+
+/*Body*/
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.section_start {
+    background-image: url("../images/section-1/background_image_section_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.btn_1 {
+    color: #381DDB;
+    background-color: #FFFFFF;
+}
+
+.main_start_container {
+    /*max-width: 60vw;*/
+    margin: 0 auto;
+    /*margin-top: 105px;*/
+    flex-direction: column;
+}
+
+.main_start_container > h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    /*font-size: clamp(16px, 5vw ,72px);*/
+    line-height: 87px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.main_start_container > h1 > span {
+    color: #FFA3A3 !important;
+}
+
+.main_start_container > p {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.btn_start_group {
+    display: flex;
+    gap: 40px;
+}
+
+.btn_2 {
+    color: #FFFFFF;
+    background-color: #FC5252;
+}
+
+.btn_3 {
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+
+.time_report {
+    height: 150px;
+    background: red;
+}
