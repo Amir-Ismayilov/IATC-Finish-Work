@@ -14,10 +14,7 @@ body {
     background-image: url("../images/section-1/background_image_section_1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
+    /*height: 100vh;*/
 }
 
 nav {
@@ -44,9 +41,7 @@ nav {
 }
 
 .main_start_container {
-    /*max-width: 60vw;*/
-    margin: 0 auto;
-    /*margin-top: 105px;*/
+    margin-top: 105px;
     flex-direction: column;
 }
 
@@ -88,6 +83,7 @@ nav {
 
 
 .time_report {
-    height: 150px;
+    margin-top: 122px;
+    height: 176px;
     background: red;
 }
