@@ -1,5 +1,4 @@
-/*All technical css*/
-
+/*To reduce our code, we write a technical css*/
 .t_center {
     display: flex;
     justify-content: center;
@@ -9,7 +8,7 @@
 .btn {
     padding: 18px 34px;
     border-radius: 8px;
-    font-size: 16px;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    line-height: 20px;
 }

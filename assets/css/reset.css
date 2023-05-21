@@ -1,14 +1,12 @@
 /* Reset all margins, padding, and borders to zero */
-* {
+*,
+*:focus,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    border: 0;
+    outline: none;
     box-sizing: border-box;
-}
-
-/* Reset font family */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 
 /* Reset default list styles */
@@ -17,7 +15,19 @@ ul, ol {
 }
 
 /* Reset default link styles */
+a:focus,
+a:active,
+a::before,
+a::after {
+    all: unset;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #A06056;
 }
