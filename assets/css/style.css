@@ -103,7 +103,7 @@ nav {
 
 /*Section Explore Category*/
 .section_explore_category {
-    padding: 240px 0;
+    margin: 240px 0;
     background-color: #FFFFFF;
 }
 
@@ -156,7 +156,7 @@ nav {
 }
 
 .about_right_side {
-    padding: 107px 0 247px 0;
+    /*padding: 107px 0 240px 0;*/
 }
 
 .about_right_side > h3 {
@@ -177,3 +177,207 @@ nav {
     color: #FFFFFF;
     padding: 20px 34px;
 }
+
+/*Section Singers*/
+/*.section_singers {*/
+/*    margin-bottom: 240px;*/
+/*}*/
+
+/*Section Events*/
+.section_events {
+    background: red;
+    /*background: linear-gradient(180deg, rgba(56, 29, 219, 0.05) 0%, rgba(56, 29, 219, 0) 100%);*/
+    height: 10vh;
+}
+
+/*Section Price*/
+.section_price {
+    background: linear-gradient(180deg, rgba(56, 29, 219, 0.05) 0%, rgba(56, 29, 219, 0) 100%);
+    padding: 240px 0;
+}
+
+.section_price h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #222222;
+}
+
+
+.price_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 100px rgba(34, 34, 34, 0.15);
+    border-radius: 20px;
+    padding: 30px 0;
+}
+
+.price_wrapper > h4 {
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 38px;
+    margin-bottom: 15px;
+}
+
+.price_wrapper > h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    margin-bottom: 30px;
+}
+
+.price_wrapper > p {
+    color: #222222;
+    line-height: 24px;
+    opacity: 0.5;
+}
+
+.card_1 {
+    border-top: 4px solid #222222;
+}
+
+.card_2 {
+    border-top: 4px solid #381DDB;
+}
+
+.card_3 {
+    border-top: 4px solid #FC5252;
+}
+
+.card_1 h4 {
+    color: #222222;
+}
+
+.card_1 h3 {
+    color: #222222;
+}
+
+.card_1 button {
+    color: #381DDB;
+    border: 1px solid #381DDB;
+    margin-top: 15px;
+}
+
+.card_2 h4 {
+    color: #381DDB;
+}
+
+.card_2 h3 {
+    color: #381DDB;
+}
+
+.card_2 button {
+    color: #FFFFFF;
+    background-color: #381DDB;
+    margin-top: 15px;
+}
+
+.card_3 h4 {
+    color: #FC5252;
+}
+
+.card_3 h3 {
+    color: #FC5252;
+}
+
+.card_3 button {
+    color: #381DDB;
+    border: 1px solid #381DDB;
+    margin-top: 15px;
+}
+
+/*Section Our Sponsors*/
+.section_sponsors {
+
+}
+
+.section_sponsors h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    text-align: center;
+    color: #222222;
+}
+
+.section_sponsors img {
+    margin: 60px 0;
+    filter: grayscale(0.7);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.section_sponsors img:hover {
+    transform: scale(1.15);
+    filter: grayscale(0);
+}
+
+.section_sponsors button {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #381DDB;
+    margin-top: 20px;
+}
+
+/*Section Testimonials*/
+.section_testimonials {
+    padding: 240px 0;
+}
+
+.footer_left_side {
+    position: relative;
+    background-color: #381DDB;
+}
+
+.footer_left_side > img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.footer_left_side > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.footer_left_side > p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    margin: 8px 0 80px 0;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+
+
+
+/*.parent {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(11, 1fr);*/
+/*    grid-template-rows: repeat(11, 1fr);*/
+/*    grid-column-gap: 30px;*/
+/*    grid-row-gap: 51px;*/
+/*}*/
+
+/*.div1 { grid-area: 2 / 1 / 3 / 7; }*/
+/*.div2 { grid-area: 4 / 1 / 6 / 9; }*/
+/*.div3 { grid-area: 1 / 11 / 3 / 10; }*/
+/*.div4 { grid-area: 4 / 9 / 7 / 10; }*/
