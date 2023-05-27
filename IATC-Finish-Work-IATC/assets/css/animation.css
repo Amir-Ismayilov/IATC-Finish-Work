@@ -1,0 +1,215 @@
+/*Icon Animation btnPlay*/
+@keyframes btnPlay {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*Icon Animation mainBtn*/
+@-webkit-keyframes mainBtn {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(7px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/*Icon Components*/
+@keyframes animationFrames-1 {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(23px, -10px) rotate(89deg);
+    }
+
+    40% {
+        transform: translate(91px, 22px) rotate(182deg);
+    }
+
+    60% {
+        transform: translate(33px, 172px) rotate(238deg);
+    }
+
+    80% {
+        transform: translate(-90px, 7px) rotate(144deg);
+    }
+
+    100% {
+        transform: translate(0) rotate(0deg);
+    }
+}
+
+@keyframes animationFrames-2 {
+    0% {
+        transform: translate(83px, 122px) rotate(108deg);
+    }
+
+    20% {
+        transform: translate(73px, -1px) rotate(36deg);
+    }
+
+    40% {
+        transform: translate(141px, 72px) rotate(72deg);
+    }
+
+    60% {
+        transform: translate(0) rotate(0deg);
+    }
+
+    80% {
+        transform: translate(-40px, 72px) rotate(144deg);
+    }
+
+    100% {
+        transform: translate(0) rotate(0deg);
+    }
+}
+
+@keyframes animationFrames-3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes animationFrames-4 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animationFrames-5 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(-450deg);
+    }
+}
+
+@keyframes dots {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes triangle-back {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-70px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes triangle-front {
+    0% {
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes ring-back {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes ring-front {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes card_animation_1 {
+    0% {
+        transform: translate(91px, 22px) rotate(182deg);
+    }
+
+    50% {
+        transform: translate(33px, 172px) rotate(238deg);
+    }
+
+    100%{
+        transform: translate(91px, 22px) rotate(182deg);
+    }
+}
+
