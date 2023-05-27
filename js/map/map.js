@@ -85,7 +85,7 @@ var addressPoints = [{
     site: "http://asoiu.edu.az/",
     longitude: "49.8483",
     latitude: "40.3780",
-    image: "/assets/images/map/image_adnsu.jpg",
+    image: "https://amir-ismayilov.github.io/IATC-Finish-Work/assets/images/map/image_adnsu.jpg",
     icon: "https://amir-ismayilov.github.io/IATC-Finish-Work/assets/images/map/favicon.ico"
 }, {
     address: "Israel Azerbaijan Training Center",
@@ -93,7 +93,7 @@ var addressPoints = [{
     site: "http://iatc.edu.az/",
     longitude: "49.8519",
     latitude: "40.3766",
-    image: "/assets/images/map/image_iatc.jpg",
+    image: "https://amir-ismayilov.github.io/IATC-Finish-Work/assets/images/map/image_iatc.jpg",
     icon: "https://amir-ismayilov.github.io/IATC-Finish-Work/assets/images/map/favicon.ico"
 },
     {
@@ -102,7 +102,7 @@ var addressPoints = [{
         site: "https://mincom.gov.az/az/",
         longitude: "49.8495995",
         latitude: "40.4023223",
-        image: "/assets/images/map/egov.png",
+        image: "https://amir-ismayilov.github.io/IATC-Finish-Work/assets/images/map/egov.png",
         icon: "https://amir-ismayilov.github.io/IATC-Finish-Work/assets/images/map/favicon.ico"
     },
     {
@@ -111,7 +111,7 @@ var addressPoints = [{
         site: "https://edu.gov.az/az/",
         longitude: "49.8589451",
         latitude: "40.3916139",
-        image: "/assets/images/map/education.jpg",
+        image: "https://amir-ismayilov.github.io/IATC-Finish-Work/assets/images/map/education.jpg",
         icon: "https://amir-ismayilov.github.io/IATC-Finish-Work/assets/images/map/favicon.ico"
     }
 ];
