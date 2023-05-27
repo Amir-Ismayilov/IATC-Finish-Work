@@ -14,14 +14,6 @@ ul, ol {
     list-style: none;
 }
 
-/* Reset default link styles */
-a:focus,
-a:active,
-a::before,
-a::after {
-    all: unset;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -29,9 +21,18 @@ a {
 
 a:hover {
     cursor: pointer;
-    color: #A06056;
+    color: unset;
 }
 
 button {
     border: none;
 }
+
+.btn:active {
+    color: #381DDB !important;
+    border: 1px solid #381DDB !important;
+}
+/*.btn:hover {*/
+/*    color: unset;*/
+/*    background-color: unset;*/
+/*}*/

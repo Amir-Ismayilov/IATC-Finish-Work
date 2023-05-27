@@ -7,32 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--    Connect Bootstrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--    Connect Owl carousel-->
+    <!--    Connect Owl Carousel-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!--    Connect Map Links-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet.css"/>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" />
+    <!--    Back To Top-->
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
     <!--    Our app.css-->
     <link rel="stylesheet" href="assets/app.css">
     <!--    Title-->
     <title>Musik.</title>
 </head>
-<body>
+<body class="custom-scroll">
 
 <!--  Section Start  -->
-<section class="section_start">
+<section class="section_start" id="home">
     <div class="container">
         <div class="row">
             <header>
                 <nav>
                     <a href="#"><img src="assets/images/main/main_logo.png" alt="musik_logo"></a>
-
-                    <ul class="t_center nav_container">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#speakers">Speakers</a></li>
-                        <li><a href="#schedule">Schedule</a></li>
+                    <ul class="t_center nav_container desktop_menu">
+                        <li><a href="#explore">Home</a></li>
+                        <li><a href="#instagram">Shots</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact Us</a></li>
-                        <li class="btn btn_tickets"><a href="#get_tickets">GET TICKETS</a></li>
+                        <li class="btn btn_tickets"><a href="#contact">GET TICKETS</a></li>
                     </ul>
+
+                    <div class="mobile_menu">
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Shots</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li class="btn btn_tickets"><a href="#">GET TICKETS</a></li>
+                            </ul>
+                        </nav>
+                        <button class="hamburger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </div>
                 </nav>
             </header>
 
@@ -42,7 +64,21 @@
                     ex non, vehicula libero. Suspendisse eget tellus lectus.</p>
                 <div class="btn_start_group">
                     <button class="btn btn_start">Get Started</button>
-                    <button class="btn btn_video">Watch Video</button>
+                    <button class="md-trigger btn btn_video" data-modal="modal-13">Watch Video</button>
+
+                    <!--  Modal Windows  -->
+                    <div class="md-modal md-effect-13" id="modal-13">
+                        <div class="md-content">
+                            <h3>BE DIGITAL MY FRIEND</h3>
+                            <div>
+                                <video src="assets/video/be_digital_my_friend.mp4" width="100%" height="360"
+                                       controls></video>
+                                <button class="md-close">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-overlay"></div>
+
                 </div>
             </div>
 
@@ -53,30 +89,61 @@
     </div>
 </section>
 
-
 <!--  Section Category  -->
-<section class="section_explore_category">
+<section class="section_explore_category" id="explore">
     <div class="container">
         <div class="row">
             <h1><span>Explore</span> By Category</h1>
         </div>
     </div>
+
     <div class="container-fluid">
+        <img class="components_2" src="assets/images/components/components_2.png" alt="components_2">
+        <img class="components_1" src="assets/images/components/components_1.png" alt="components_1">
+        <img class="components_3" src="assets/images/components/components_3.png" alt="components_3">
+        <img class="components_4" src="assets/images/components/components_4.png" alt="components_4">
         <div class="row">
             <div class="carousel-wrap">
                 <div class="owl-carousel">
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
-                    <div class="item"><img src="http://placehold.it/150x150"></div>
+                    <div class="item item_1 ">
+                        <div class="item_wrapper">
+                            <img src="assets/icons/explore/djMixer.png">
+                            <h4>Pop</h4>
+                            <p>Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae</p>
+                        </div>
+                    </div>
+
+                    <div class="item item_2">
+                        <div class="item_wrapper">
+                            <img src="assets/icons/explore/bagpipes.png">
+                            <h4>Folk</h4>
+                            <p>Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae</p>
+                        </div>
+                    </div>
+
+                    <div class="item item_3">
+                        <div class="item_wrapper">
+                            <img src="assets/icons/explore/saxophone.png">
+                            <h4>Instrumental</h4>
+                            <p>Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae</p>
+                        </div>
+                    </div>
+
+                    <div class="item item_4">
+                        <div class="item_wrapper">
+                            <img src="assets/icons/explore/guitar.png">
+                            <h4>Rock</h4>
+                            <p>Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae</p>
+                        </div>
+                    </div>
+
+                    <div class="item item_5">
+                        <div class="item_wrapper">
+                            <img src="assets/icons/explore/trumpet.png">
+                            <h4>Jazz</h4>
+                            <p>Duis nec sodales nibh. Proin lectus tortor, rutrum vel vulputate vitae</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,14 +151,16 @@
 </section>
 
 <!--  Section Musik  -->
-<section class="section_musik">
+<section class="section_musik" id="about">
+    <img class="components_5" src="assets/images/components/components_5.png" alt="components_5">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 about_left_side">
-                <img src="assets/images/about/two_pictures.png" alt="party">
+            <div class="musik_left_side col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <img src="assets/images/musik/party_1.png" alt="party-1">
+                <img src="assets/images/musik/party_2.png" alt="party-2">
             </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 about_right_side">
+            <div class="musik_right_side col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 <h3>About Musik</h3>
                 <p>Fusce justo mi, vehicula id arcu et, dapibus tristique lectus. Vivamus a elit sodales, tincidunt nunc
                     non, maximus lacus. Fusce a augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus non
@@ -105,9 +174,17 @@
 
 <!--  Section Singers  -->
 <section class="section_singers">
+    <img class="shape" src="assets/images/components/shape.png" alt="shape">
+    <img class="dots" src="assets/images/components/dots.png" alt="dots">
+    <img class="triangle-back" src="assets/images/components/triangle-back.png" alt="triangle-back">
+    <img class="triangle-front" src="assets/images/components/triangle-front.png" alt="triangle-front">
+
+    <img class="ring-back" src="assets/images/components/ring-back.png" alt="ring-back">
+    <img class="ring-front" src="assets/images/components/ring-front.png" alt="ring-front">
+
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 about_right_side">
+            <div class="singers_left_side col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 <h3>Singers</h3>
                 <p>Fusce justo mi, vehicula id arcu et, dapibus tristique lectus. Vivamus a elit sodales, tincidunt nunc
                     non, maximus lacus. Fusce a augue sed dolor auctor iaculis vitae id mauris. Integer ut lectus non
@@ -116,30 +193,74 @@
                 <a href="#" class="btn btn_learn_more">View All Singers</a>
             </div>
 
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 about_left_side">
-                <img src="assets/images/about/four_pictures.png" alt="singers">
-                <!--                <div class="parent">-->
-                <!--                    <div class="div1"><img src="assets/images/singers/singer_1.png"></div>-->
-                <!--                    <div class="div2"><img src="assets/images/singers/singer_2.png"></div>-->
-                <!--                    <div class="div3"><img src="assets/images/singers/singer_3.png"></div>-->
-                <!--                    <div class="div4"><img src="assets/images/singers/singer_4.png"></div>-->
-                <!--                </div>-->
-            </div>
-        </div>
-    </div>
-</section>
 
-<!--  Section Events  -->
-<section class="section_events">
-    <div class="container">
-        <div class="row">
-            ddiuewhdewuid
+            <div class="singers_right_side col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="box-container">
+
+                    <div class="card box1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/singers/singer_1.png" alt="singer_1">
+                            </div>
+                            <div class="card-back">
+                                Beyoncé: Known for her powerful vocals, Beyoncé is an American singer, songwriter, and
+                                actress. She has achieved great success with hits like "Single Ladies (Put a Ring on
+                                It)," "Halo," and "Crazy in Love."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card box2">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/singers/singer_2.png" alt="singer_2">
+                            </div>
+                            <div class="card-back">
+                                Ed Sheeran: Ed Sheeran is a British singer-songwriter known for his heartfelt lyrics and
+                                acoustic sound. He has garnered widespread popularity with songs such as "Shape of You,"
+                                "Thinking Out Loud," and "Photograph."
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card box3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/singers/singer_3.png" alt="singer_3">
+                            </div>
+                            <div class="card-back">
+                                Adele: Adele is a British singer known for her soulful voice and emotional ballads. Her
+                                powerful performances and chart-topping hits like "Rolling in the Deep," "Someone Like
+                                You," and "Hello" have earned her critical acclaim and a massive fan base.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card box4">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="assets/images/singers/singer_4.png" alt="singer_4">
+                            </div>
+                            <div class="card-back">
+                                Taylor Swift: Taylor Swift is an American singer-songwriter who has successfully
+                                transitioned from country music to pop. Known for her storytelling style, she has
+                                produced numerous hit songs like "Love Story," "Blank Space," and "Shake It Off."
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!--  Section Price  -->
 <section class="section_price">
+    <img class="card_animation_1" src="assets/images/components/card_1.png" alt="card_animation_1">
+    <img class="components_2" src="assets/images/components/components_2.png" alt="components_2">
+    <img class="components_3" src="assets/images/components/components_3.png" alt="components_3">
+
     <div class="container">
         <div class="row">
             <h1>Choose a Tier that’s right for you</h1>
@@ -175,14 +296,18 @@
                     <button class="btn">Get Tickets</button>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 <!--  Section Our Sponsors  -->
 <section class="section_sponsors">
-    <div class="container">
+    <img class="ring-back" src="assets/images/components/ring-back.png" alt="ring-back">
+    <img class="ring-front" src="assets/images/components/ring-front.png" alt="ring-front">
+
+    <img class="components_2" src="assets/images/components/components_2.png" alt="components_2">
+    <img class="components_3" src="assets/images/components/components_3.png" alt="components_3">
+    <div class="container desktop_sponsors">
         <div class="row">
             <h1>Our Sponsors</h1>
             <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 t_center">
@@ -222,8 +347,66 @@
             </div>
         </div>
     </div>
-</section>
 
+    <!--  Mobile Version  -->
+    <div class="sponsors_mobile">
+        <h1>Our Sponsors</h1>
+        <div class="carousel-wrap">
+            <div class="owl-carousel sponsors_mobile_wrapper">
+                <div class="sponsors_item_mobile">
+                    <div class="item_wrapper_sponsors">
+                        <img src="assets/images/sponsors/google.png" alt="google">
+                    </div>
+                </div>
+
+                <div class="sponsors_item_mobile">
+                    <div class="item_wrapper_sponsors">
+                        <img src="assets/images/sponsors/microsoft.png" alt="microsoft">
+                    </div>
+                </div>
+
+                <div class="sponsors_item_mobile">
+                    <div class="item_wrapper_sponsors">
+                        <img src="assets/images/sponsors/airbnb.png" alt="airbnb">
+                    </div>
+                </div>
+
+                <div class="sponsors_item_mobile">
+                    <div class="item_wrapper_sponsors">
+                        <img src="assets/images/sponsors/axure.png" alt="axure">
+                    </div>
+                </div>
+
+                <div class="sponsors_item_mobile">
+                    <div class="item_wrapper_sponsors">
+                        <img src="assets/images/sponsors/apple.png" alt="apple">
+                    </div>
+                </div>
+
+                <div class="sponsors_item_mobile">
+                    <div class="item_wrapper_sponsors">
+                        <img src="assets/images/sponsors/facebook.png" alt="facebook">
+                    </div>
+                </div>
+
+                <div class="sponsors_item_mobile">
+                    <div class="item_wrapper_sponsors">
+                        <img src="assets/images/sponsors/nokia.png" alt="nokia">
+                    </div>
+                </div>
+
+                <div class="sponsors_item_mobile">
+                    <div class="item_wrapper_sponsors">
+                        <img src="assets/images/sponsors/oracle.png" alt="oracle">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <button class="btn">Become a Sponsor</button>
+        </div>
+    </div>
+</section>
 
 <!--  Section Testimonials  -->
 <section class="section_testimonials">
@@ -234,30 +417,168 @@
     </div>
 </section>
 
+<!--  Best Shots  -->
+<section class="section_instagram" id="instagram">
+    <div class="text_container container">
+        <div class="row">
+            <h1>See our Best Shots</h1>
+        </div>
+        <img class="instagram_logo" src="assets/images/main/instagram.png" alt="instagram">
+    </div>
 
-<!--  Section Footer  -->
-<section class="section_footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="carousel-wrap">
+                <div class="owl-carousel">
+                    <div class="shots_item">
+                        <div class="item_wrapper_shots">
+                            <img src="assets/images/instagram/instagram_1.png" alt="instagram_picture_1">
+                        </div>
+                        <div class="shots_info">
+                            <div class="card_bottom_instagram">
+                                <div class="t_center">
+                                    <img src="assets/icons/main/like.png">
+                                    <p>412</p>
+                                </div>
+
+                                <div class="t_center">
+                                    <img src="assets/icons/main/comment.png">
+                                    <p>140</p>
+                                </div>
+                            </div>
+                            <p class="instagram_title">Lorem Ipsum Amet</p>
+                            <p>#music #concert #conference #london #event #artist #dj #soundtrack #dance</p>
+                        </div>
+                    </div>
+
+                    <div class="shots_item">
+                        <div class="item_wrapper_shots">
+                            <img src="assets/images/instagram/instagram-2.png" alt="instagram_picture_2">
+                        </div>
+
+                        <div class="shots_info">
+                            <div class="card_bottom_instagram">
+                                <div class="t_center">
+                                    <img src="assets/icons/main/like.png">
+                                    <p>412</p>
+                                </div>
+
+                                <div class="t_center">
+                                    <img src="assets/icons/main/comment.png">
+                                    <p>140</p>
+                                </div>
+                            </div>
+                            <p class="instagram_title">Lorem Ipsum Amet</p>
+                            <p>#music #concert #conference #london #event #artist #dj #soundtrack #dance</p>
+                        </div>
+                    </div>
+
+                    <div class="shots_item">
+                        <div class="item_wrapper_shots">
+                            <img src="assets/images/instagram/instagram-3.png" alt="instagram_picture_3">
+                        </div>
+
+                        <div class="shots_info">
+                            <div class="card_bottom_instagram">
+                                <div class="t_center">
+                                    <img src="assets/icons/main/like.png">
+                                    <p>412</p>
+                                </div>
+
+                                <div class="t_center">
+                                    <img src="assets/icons/main/comment.png">
+                                    <p>140</p>
+                                </div>
+                            </div>
+                            <p class="instagram_title">Lorem Ipsum Amet</p>
+                            <p>#music #concert #conference #london #event #artist #dj #soundtrack #dance</p>
+                        </div>
+                    </div>
+
+                    <div class="shots_item">
+                        <div class="item_wrapper_shots">
+                            <img src="assets/images/instagram/instagram-4.png" alt="instagram_picture_4">
+                        </div>
+
+                        <div class="shots_info">
+                            <div class="card_bottom_instagram">
+                                <div class="t_center">
+                                    <img src="assets/icons/main/like.png">
+                                    <p>412</p>
+                                </div>
+
+                                <div class="t_center">
+                                    <img src="assets/icons/main/comment.png">
+                                    <p>140</p>
+                                </div>
+                            </div>
+                            <p class="instagram_title">Lorem Ipsum Amet</p>
+                            <p>#music #concert #conference #london #event #artist #dj #soundtrack #dance</p>
+                        </div>
+                    </div>
+
+                    <div class="shots_item">
+                        <div class="item_wrapper_shots">
+                            <img src="assets/images/instagram/instagram-5.png" alt="instagram_picture_5">
+                        </div>
+
+                        <div class="shots_info">
+                            <div class="card_bottom_instagram">
+                                <div class="t_center">
+                                    <img src="assets/icons/main/like.png">
+                                    <p>412</p>
+                                </div>
+
+                                <div class="t_center">
+                                    <img src="assets/icons/main/comment.png">
+                                    <p>140</p>
+                                </div>
+                            </div>
+                            <p class="instagram_title">Lorem Ipsum Amet</p>
+                            <p>#music #concert #conference #london #event #artist #dj #soundtrack #dance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  Custom Map  -->
+<section class="section_map">
+    <div>
+        <div id="progress">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="vacancy_map"></div>
+    </div>
+</section>
+
+<!--  Footer  -->
+<section class="section_footer" id="contact">
     <div class="container-fluid">
         <div class="row">
             <div class="footer_left_side col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                <h2>Contact us</h2>
-                <p>Have an inquiry? We’ll be happy to assist you</p>
-                <ul>
-                    <li>
-                        <img src="assets/icons/phone.png">
-                        <p>+92 333 6527366</p>
-                    </li>
+                <div class="footer_left_side_wrapper">
+                    <h2>Contact us</h2>
+                    <p>Have an inquiry? We’ll be happy to assist you</p>
+                    <ul>
+                        <li>
+                            <img src="assets/icons/footer/phone.png">
+                            <p>+92 333 6527366</p>
+                        </li>
 
-                    <li>
-                        <img src="assets/icons/email.png">
-                        <p>abuzer@greelogix.com</p>
-                    </li>
+                        <li>
+                            <img src="assets/icons/footer/email.png">
+                            <p>abuzer@greelogix.com</p>
+                        </li>
 
-                    <li>
-                        <img src="assets/icons/map.png">
-                        <p>Plot 252, Block L Phase 2 Johar Town, Lahore, PK</p>
-                    </li>
-                </ul>
+                        <li>
+                            <img src="assets/icons/footer/map.png">
+                            <p>Plot 252, Block L Phase 2 Johar Town, Lahore, PK</p>
+                        </li>
+                    </ul>
+                </div>
                 <img src="assets/images/footer/figure_left.png" alt="figure_left_side">
             </div>
 
@@ -287,14 +608,67 @@
             </div>
         </div>
     </div>
+
+    <div class="copyright_area">
+        <div class="container">
+            <div class="row">
+                <div class="copyright_area_left col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div>
+                                <a href="#" class="col-12"><img src="assets/images/main/main_logo.png" alt="musik_logo"></a>
+                                <nav>
+                                    <ul class="nav_container_copyright">
+                                        <li><a href="#explore">Home</a></li>
+                                        <li><a href="#instagram">Shots</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#contact">Contact Us</a></li>
+                                        <li><a href="#contact">Tickets</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright_area_center  col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <ul>
+                        <li><a href="#"><img src="assets/icons/copyright/facebook.png" alt="facebook_icon"></a></li>
+                        <li><a href="#"><img src="assets/icons/copyright/twitter.png" alt="twitter_icon"></a></li>
+                        <li><a href="#"><img src="assets/icons/copyright/linkedin.png" alt="linkedin_icon"></a></li>
+                        <li><a href="#"><img src="assets/icons/copyright/instagram.png" alt="instagram_icon"></a></li>
+                    </ul>
+                </div>
+
+                <div class="copyright_area_right col-xs-12 col-sm-12 col-md-12 col-lg-2">
+                    <p>© musik.com, 2021 </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-
-<!--CDN LINKS-->
+<!--Back To Top -->
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+    </svg>
+</div>
+<!--Progressbar -->
+<div class="progress-bar"/>
+<!--CDN LINKS Map-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet.js"></script>
+<script src="js/map/leaflet.markercluster-src.js"></script>
+<script src="js/map/leaflet.fullscreen.min.js"></script>
+<script src="js/map/BoundaryCanvas.js"></script>
+<script src="js/map/map.js"></script>
+<!--CDN LINKS Main-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
 <script src="js/carousel.js"></script>
 <script src="js/time_ago.js"></script>
+<script src="js/backToTop.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
