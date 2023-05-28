@@ -12,6 +12,7 @@ body {
 
 /*Section Start*/
 .section_start {
+    min-height: 768px;
     height: 100vh;
     background-image: url("../images/main/background_start.png");
     background-repeat: no-repeat;
@@ -70,15 +71,15 @@ nav:first-child {
 }
 
 .start_center_container {
-    margin-top: 105px;
+    margin-top: 75px;
     flex-direction: column;
 }
 
 .start_center_container > h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 72px;
-    line-height: 87px;
+    font-size: 55px;
+    line-height: 60px;
     text-align: center;
     text-transform: capitalize;
 }
@@ -138,7 +139,8 @@ nav:first-child {
 /*Time ago*/
 .time_report {
     position: absolute;
-    bottom: 50px;
+    bottom: -35px;
+    user-select: none;
     left: 0;
 }
 
@@ -147,7 +149,7 @@ nav:first-child {
 }
 
 .time_report span {
-    font-size: 120px;
+    font-size: 110px;
     color: #FFFFFF;
 }
 
@@ -160,7 +162,6 @@ nav:first-child {
 
 .components_1 {
     position: absolute;
-    z-index: 5;
     bottom: -50px;
     left: 110px;
     animation: animationFrames-1 40s linear infinite;
@@ -169,6 +170,7 @@ nav:first-child {
 .components_2 {
     position: absolute;
     left: 75px;
+    z-index: -1;
     animation: animationFrames-2 35s linear infinite;
 }
 
@@ -296,7 +298,7 @@ nav:first-child {
 
 .components_5 {
     position: absolute;
-    z-index: 5;
+    z-index: -5;
     left: 105px;
     bottom: 10px;
     animation: animationFrames-4 30s linear infinite;
@@ -409,7 +411,7 @@ nav:first-child {
     bottom: 400px;
     animation: ring-back 10s linear infinite;
     opacity: 0.5;
-    z-index: 5;
+    z-index: 35;
 }
 
 .ring-front {
@@ -417,7 +419,7 @@ nav:first-child {
     left: 117px;
     bottom: 430px;
     animation: ring-front 10s linear infinite;
-    z-index: 5;
+    z-index: 35;
 }
 
 .singers_left_side {
