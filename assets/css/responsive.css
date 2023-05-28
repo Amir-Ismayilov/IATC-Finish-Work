@@ -24,7 +24,7 @@
     }
 
     .time_report {
-        bottom: 20px;
+        bottom: -95px;
     }
 
     .time_report span {
@@ -72,6 +72,8 @@
     .components_3 {
         right: 37px;
         width: 40px;
+        z-index: -5;
+        opacity: 0.6;
     }
 
     .components_4 {
@@ -236,6 +238,10 @@
         font-size: 10px;
         line-height: 1.4;
     }
+
+    .components_4 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -271,7 +277,7 @@
     }
 
     .time_report {
-        bottom: 70px;
+        bottom: -70px;
     }
 
     .time_report span {
