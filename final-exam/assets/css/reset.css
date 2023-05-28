@@ -1,0 +1,38 @@
+/* Reset all margins, padding, and borders to zero */
+*,
+*:focus,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Reset default list styles */
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    color: unset;
+}
+
+button {
+    border: none;
+}
+
+.btn:active {
+    color: #381DDB !important;
+    border: 1px solid #381DDB !important;
+}
+/*.btn:hover {*/
+/*    color: unset;*/
+/*    background-color: unset;*/
+/*}*/
