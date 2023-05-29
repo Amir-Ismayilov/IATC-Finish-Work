@@ -29,10 +29,6 @@ button {
 }
 
 .btn:active {
-    color: #381DDB !important;
-    border: 1px solid #381DDB !important;
+    color: #fefefe !important;
+    border: none;
 }
-/*.btn:hover {*/
-/*    color: unset;*/
-/*    background-color: unset;*/
-/*}*/

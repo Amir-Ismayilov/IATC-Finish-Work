@@ -18,18 +18,17 @@ body {
     height: 600px;
     overflow: hidden;
     position: relative;
-    font-family: "Roboto", sans-serif !important;
     user-select: none;
     z-index: 0;
 }
 
-#addresses {
-    font-family: "Roboto", sans-serif !important;
-}
+/*#addresses {*/
+/*    font-family: "Roboto", sans-serif !important;*/
+/*}*/
 
 #vacancy_map h1, #vacancy_map h2, #vacancy_map h3, #vacancy_map h4, #vacancy_map h5, #vacancy_map h6 {
     margin: 0;
-    font-family: "Roboto", sans-serif !important;
+    /*font-family: "Roboto", sans-serif !important;*/
 }
 
 .image_marker_factory img {
@@ -85,7 +84,7 @@ body {
 .f1_location_popup .leaflet-popup-content {
     /*cursor: pointer;*/
     font-weight: normal;
-    font-family: "Roboto", sans-serif;
+    /*font-family: "Roboto", sans-serif;*/
     display: flex;
     flex-direction: column;
 }

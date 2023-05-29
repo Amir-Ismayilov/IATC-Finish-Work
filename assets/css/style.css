@@ -1,9 +1,9 @@
 /*Import fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;700;&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;700&display=swap');
 
 /*Frequently used properties*/
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'sans-serif';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -30,7 +30,7 @@ nav:first-child {
 .nav_container {
     gap: 40px;
     margin-top: 23px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -48,6 +48,12 @@ nav:first-child {
 .btn_tickets {
     color: #381DDB;
     background-color: #FFFFFF;
+    padding: 18px 34px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    border: 1px solid transparent;
 }
 
 .btn_tickets:hover {
@@ -71,12 +77,21 @@ nav:first-child {
 }
 
 .start_center_container {
-    margin-top: 75px;
+    /*margin-top: 75px;*/
+    /*flex-direction: column;*/
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.start_center_container > div:first-child {
     flex-direction: column;
 }
 
-.start_center_container > h1 {
-    font-family: 'Montserrat', sans-serif;
+.start_center_container h1 {
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     font-size: 55px;
     line-height: 60px;
@@ -84,11 +99,11 @@ nav:first-child {
     text-transform: capitalize;
 }
 
-.start_center_container > h1 > span {
+.start_center_container h1 > span {
     color: #FFA3A3 !important;
 }
 
-.start_center_container > p {
+.start_center_container p {
     margin: 40px 0;
     text-align: center;
     font-size: 24px;
@@ -115,10 +130,11 @@ nav:first-child {
     color: #FFFFFF;
     background-color: transparent;
     position: relative;
+    /*border: 1px solid transparent;*/
 }
 
 .btn_video:hover {
-    border: transparent !important;
+    /*border: transparent !important;*/
 }
 
 .btn_video:before {
@@ -138,10 +154,10 @@ nav:first-child {
 
 /*Time ago*/
 .time_report {
-    position: absolute;
-    bottom: -35px;
+    /*position: absolute;*/
+    /*bottom: -35px;*/
     user-select: none;
-    left: 0;
+    /*left: 0;*/
 }
 
 .time_report p {
@@ -149,7 +165,8 @@ nav:first-child {
 }
 
 .time_report span {
-    font-size: 110px;
+    font-family: sans-serif;
+    font-size: 120px;
     color: #FFFFFF;
 }
 
@@ -189,7 +206,7 @@ nav:first-child {
 }
 
 .section_explore_category h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 34px;
     font-weight: 700;
     line-height: 44px;
@@ -248,7 +265,7 @@ nav:first-child {
 }
 
 .item_wrapper > h4 {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 24px;
     font-weight: 800;
     line-height: 38px;
@@ -332,7 +349,7 @@ nav:first-child {
 
 .musik_right_side > h3 {
     color: #222222;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     font-size: 34px;
     line-height: 44px;
@@ -348,7 +365,7 @@ nav:first-child {
     color: #FFFFFF;
     padding: 20px 50px;
     position: relative;
-
+    transition: 0.5s all ease-in-out;
 }
 
 .btn_learn_more:after {
@@ -362,6 +379,11 @@ nav:first-child {
     animation-name: mainBtn;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+}
+
+.btn_learn_more:active {
+    border: 1px solid #381DDB !important;
+    color: #381DDB !important;
 }
 
 .btn_learn_more:hover {
@@ -428,7 +450,7 @@ nav:first-child {
 
 .singers_left_side > h3 {
     color: #222222;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     font-size: 34px;
     line-height: 44px;
@@ -510,7 +532,7 @@ nav:first-child {
 }
 
 .section_price h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     font-size: 34px;
     line-height: 44px;
@@ -532,7 +554,7 @@ nav:first-child {
 }
 
 .price_wrapper > h4 {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 24px;
     font-weight: 800;
     line-height: 38px;
@@ -540,7 +562,7 @@ nav:first-child {
 }
 
 .price_wrapper > h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     font-size: 60px;
     line-height: 73px;
@@ -611,6 +633,7 @@ nav:first-child {
     position: absolute;
     bottom: 150px;
     right: 110px;
+    z-index: -1;
     animation: card_animation_1 10s linear infinite;
 }
 
@@ -620,7 +643,7 @@ nav:first-child {
 }
 
 .section_sponsors h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     font-size: 34px;
     line-height: 44px;
@@ -641,7 +664,7 @@ nav:first-child {
 }
 
 .section_sponsors button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -656,7 +679,7 @@ nav:first-child {
     border: 1px solid #381DDB;
 }
 
-    /*Section Testimonials*/
+/*Section Testimonials*/
 /*.section_testimonials {*/
 /*    padding: 240px 0;*/
 /*}*/
@@ -674,7 +697,7 @@ nav:first-child {
 }
 
 .section_instagram h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     font-size: 34px;
     line-height: 44px;
@@ -710,7 +733,7 @@ nav:first-child {
 }
 
 .card_bottom_instagram p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -779,11 +802,11 @@ nav:first-child {
 }
 
 .footer_left_side_wrapper {
-    z-index: 100;
+    z-index: 99;
 }
 
 .footer_left_side_wrapper > h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     font-size: 34px;
     line-height: 44px;
@@ -791,7 +814,7 @@ nav:first-child {
 }
 
 .footer_left_side_wrapper > p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'sans-serif';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -818,7 +841,7 @@ nav:first-child {
 }
 
 .footer_left_side ul li p {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     line-height: 20px;
     margin-top: 20px;
@@ -844,7 +867,7 @@ nav:first-child {
 }
 
 .footer_right_side h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 24px;
     font-weight: 800;
     line-height: 38px;
@@ -991,7 +1014,7 @@ input:focus ~ .highlight {
     width: 100%;
     vertical-align: middle;
     color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -1065,7 +1088,7 @@ input:focus ~ .highlight {
     gap: 30px;
     padding: 0;
     margin-top: 55px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;

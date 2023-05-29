@@ -24,7 +24,7 @@
     }
 
     .time_report {
-        bottom: -95px;
+        /*bottom: -95px;*/
     }
 
     .time_report span {
@@ -182,7 +182,7 @@
 
 @media screen and (max-width: 768px) {
     .time_report span {
-        font-size: 70px;
+        font-size: 65px;
     }
 
     .desktop_sponsors {
@@ -245,17 +245,17 @@
 }
 
 @media screen and (max-width: 576px) {
-    .start_center_container > h1 {
+    .start_center_container  h1 {
         font-weight: 500;
         font-size: 40px;
         line-height: 50px;
     }
-   
+
         .start_center_container {
         min-height: unset;
     }
 
-    .start_center_container > p {
+    .start_center_container  p {
         margin: 30px 0;
         font-size: 18px;
         line-height: 25px;
@@ -281,11 +281,11 @@
     }
 
     .time_report {
-        bottom: 10px;
+        /*bottom: 10px;*/
     }
 
     .time_report span {
-        font-size: 37px;
+        font-size: 40px;
     }
 
     .section_sponsors img {
